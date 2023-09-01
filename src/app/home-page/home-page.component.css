@@ -1,5 +1,8 @@
-.bg-img{
-    background: url('https://fictionhorizon.com/wp-content/uploads/2023/07/GojoGeto.jpg');
-    background-size: cover;
-
+.bg-img {
+  background: url("https://fictionhorizon.com/wp-content/uploads/2023/07/GojoGeto.jpg");
+  background-size: cover;
+}
+.bg-color {
+  color: #252323e6;
+  background-color: #00000048;
 }

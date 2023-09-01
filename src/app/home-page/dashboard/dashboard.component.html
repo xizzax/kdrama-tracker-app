@@ -1,0 +1,45 @@
+<div [@listAnimation]>
+  <div class="bg-color rounded-lg mb-2" [@slideIn]>
+    <app-line-chart></app-line-chart>
+  </div>
+  <div class="grid grid-cols-12 gap-1">
+    <div class="col-span-6 max-md:col-span-12 h-full bg-color rounded-lg p-2" [@slideIn]>
+      <app-genre-distribution> </app-genre-distribution>
+    </div>
+
+    <div class="grid grid-cols-12 col-span-6 max-md:col-span-12 gap-1">
+      <div
+        [@slideIn]
+        class="flex  bg-color flex-col text-lg  items-center rounded-lg
+         md:col-span-6 max-md:col-span-12 "
+      >
+        <h1 [@slideIn] class="text-center">Overall Watchtime</h1>
+        <div
+          [@slideIn]
+          class="radial-progress my-auto"
+          style="--value: 69; --size: 8rem; --thickness: 1rem"
+        >
+          12 hours
+        </div>
+      </div>
+
+      <div
+        [@slideIn]
+        class="flex flex-col  bg-color text-lg items-center rounded-lg 
+        md:col-span-6 max-md:col-span-12 "
+        >
+        <h1 class="text-center text-md">Shows in Queue</h1>
+        <h1 class="text-5xl my-auto">Alot</h1>
+      </div>
+
+      <div [@slideIn] class="col-span-12  rounded-lg bg-color">
+        <div class="flex justify-between">
+          <h1>Most Watched Show</h1>
+          <h1>Weekly</h1>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</div>

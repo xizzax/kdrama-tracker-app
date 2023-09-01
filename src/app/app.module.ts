@@ -9,6 +9,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RightSiderbarComponent } from './home-page/right-siderbar/right-siderbar.component';
 import { WatchlistShowCardComponent } from './home-page/right-siderbar/watchlist-show-card/watchlist-show-card.component';
 import { PlatformRowComponent } from './home-page/right-siderbar/platform-row/platform-row.component';
+import { LineChartComponent } from './home-page/dashboard/line-chart/line-chart.component';
+import { GenreDistributionComponent } from './home-page/dashboard/genre-distribution/genre-distribution.component';
+import { DashboardComponent } from './home-page/dashboard/dashboard.component';
 
 
 @NgModule({
@@ -18,7 +21,10 @@ import { PlatformRowComponent } from './home-page/right-siderbar/platform-row/pl
     LeftSidebarComponent,
     RightSiderbarComponent,
     WatchlistShowCardComponent,
-    PlatformRowComponent
+    PlatformRowComponent,
+    LineChartComponent,
+    GenreDistributionComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
