@@ -1,0 +1,75 @@
+<div
+  class="w-56 bg-color min-h-screen text-white flex flex-col justify-between"
+  [@slideInfromLeft]
+  [@listAnimation]
+>
+  <div class="flex flex-col gap-10">
+    <h1 class="text-5xl font-normal text-center mt-5">Cookers</h1>
+
+    <div class="flex flex-col items-center text-2xl">
+      <a
+        [@slideIn]
+        class="px-4 py-2 cursor-pointer"
+        [class]="
+          active == 0
+            ? 'bg-slate-200 rounded-full transition ease-in duration-300'
+            : ''
+        "
+        (click)="active = 0"
+        >Dashboard</a
+      >
+      <a
+        [@slideIn]
+        class="px-4 py-2 cursor-pointer"
+        [class]="
+          active == 1
+            ? 'bg-slate-200 rounded-full transition ease-in duration-300'
+            : ''
+        "
+        (click)="active = 1"
+        >WatchList</a
+      >
+      <a
+        [@slideIn]
+        class="px-4 py-2 cursor-pointer"
+        [class]="
+          active == 2
+            ? 'bg-slate-200 rounded-full transition ease-in duration-300'
+            : ''
+        "
+        (click)="active = 2"
+        >Show Tracker</a
+      >
+      <a
+        [@slideIn]
+        class="px-4 py-2 cursor-pointer"
+        [class]="
+          active == 3
+            ? 'bg-slate-200 rounded-full transition ease-in duration-300'
+            : ''
+        "
+        (click)="active = 3"
+        >Ratings</a
+      >
+      <a
+        [@slideIn]
+        class="px-4 py-2 cursor-pointer"
+        [class]="
+          active == 4
+            ? 'bg-slate-200 rounded-full transition ease-in duration-300'
+            : ''
+        "
+        (click)="active = 4"
+        >Settings</a
+      >
+    </div>
+  </div>
+  <div class="flex gap-5 justify-center items-center py-2">
+    <img
+      class="w-12 h-12 object-cover rounded-full"
+      src="https://static.zoomnews.com/thumb/msid-93673950,updatedat-1660980212026,width-1280,height-720,resizemode-75/93673950.jpg"
+      alt=""
+    />
+    <h1 class="text-2xl">Pizza</h1>
+  </div>
+</div>
